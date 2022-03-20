@@ -6,12 +6,20 @@
   list-style: none;
 }
 
+/* START CSS HEADER */
+
 header {
+  width: 100vw;
+  position: fixed;
   display: flex;
   padding: 1.5rem;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+header strong {
+  color: orangered;
 }
 
 header h1 {
@@ -23,7 +31,16 @@ nav ul {
   gap: 2.5rem;
 }
 
+.nav-item a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+/* END CSS HEADER */
+
+/* START CSS MAIN */
+
 .container-section {
   width: 100vh;
   height: 100vh;
+  padding-top: 6rem;
 }
