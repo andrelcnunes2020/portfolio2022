@@ -23,6 +23,7 @@ header strong {
 }
 
 header h1 {
+  color: #fff;
   margin: 0rem;
 }
 
@@ -43,4 +44,70 @@ nav ul {
   width: 100vh;
   height: 100vh;
   padding-top: 6rem;
+}
+
+#home {
+  width: auto;
+  height: 100vh;
+  background-image: url("/assets/img/background-fullstack-1080.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+}
+
+#home h2 {
+  padding-top: 3rem;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+#skills {
+  width: auto;
+  height: 100vh;
+  background-image: url("/assets/img/undraw_programming_re_kg9v.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+}
+
+#skills h2 {
+  display: inline-block;
+  width: 10rem;
+  margin: 0rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: orangered;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.skill-itens-container {
+  width: 95vw;
+  margin: 2rem auto;
+  padding-top: 2rem;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.skill-itens {
+  width: 12.5rem;
+  justify-content: center;
+}
+
+.skill-itens img {
+  max-width: 100%;
+}
+
+.skill-itens h3 {
+  font-size: 2rem;
+  margin-top: 0.25rem;
 }
