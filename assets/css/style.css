@@ -5,9 +5,10 @@
   list-style: none;
 }
 
-/*Start header*/
+/* PADRAO PARA TODOS OS CONTAINERS */
 .header-container,
-.main-container {
+.main-container,
+.main-skills {
   display: flex;
   max-width: 1000px;
   flex-direction: column;
@@ -16,6 +17,9 @@
   gap: 1rem;
   margin: 1rem auto;
 }
+/* PADRAO PARA TODOS OS CONTAINERS */
+
+/*Start header*/
 .header-logo {
   max-width: 100%;
   display: block;
@@ -62,8 +66,27 @@
 
 .main-about p {
   font-size: 1.5rem;
+  width: 40ch;
+  text-align: center;
 }
 /* END ABOUT */
 /* START SKILLS */
+.main-skills h2 {
+  font-size: 3rem;
+}
 
+.main-skills h3 {
+  font-size: 1.5rem;
+}
+
+.skills-master {
+  margin: 1rem 2rem;
+}
 /* END SKILLS */
+
+/* START FOOTER */
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* END FOOTER */
