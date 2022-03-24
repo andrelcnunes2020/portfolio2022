@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  color: #141414;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -8,7 +10,8 @@
 /* PADRAO PARA TODOS OS CONTAINERS */
 .header-container,
 .main-container,
-.main-skills {
+.main-skills,
+.main-project {
   display: flex;
   max-width: 1000px;
   flex-direction: column;
@@ -83,6 +86,51 @@
   margin: 1rem 2rem;
 }
 /* END SKILLS */
+
+/* START PROJECT */
+.main-project h2 {
+  font-size: 3rem;
+}
+
+.project-clients {
+  display: flex;
+  gap: 40px;
+}
+
+.project-clients-itens {
+  width: 300px;
+}
+
+.project-clients-itens img {
+  max-width: 100%;
+  max-height: 35%;
+}
+
+.project-clients-itens p {
+  font-size: 1.2rem;
+  font-weight: 1.2;
+}
+
+.project-clients-itens p span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.project-clients-itens button {
+  display: block;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 5px;
+  background: #141414;
+}
+
+.project-clients-itens button a {
+  color: #fff;
+  font-size: 1rem;
+  padding: 2px;
+}
+
+/* END PROJECT */
 
 /* START FOOTER */
 footer p {
