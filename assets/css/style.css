@@ -18,14 +18,14 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 /* PADRAO PARA TODOS OS CONTAINERS */
 
 /*Start header*/
 .header-logo {
-  max-width: 100%;
   display: block;
+  width: 200px;
   padding: 0 4.5rem;
 }
 
@@ -59,6 +59,10 @@
   font-size: 3rem;
   line-height: 1;
   text-align: center;
+}
+
+.main-about h1 strong {
+  font-style: italic;
 }
 
 .main-about h2 {
@@ -119,15 +123,15 @@
 .project-clients-itens button {
   display: block;
   border: none;
-  border-radius: 6px;
-  padding: 4px 5px;
-  background: #141414;
+  font-size: 1.2rem;
 }
 
 .project-clients-itens button a {
   color: #fff;
   font-size: 1rem;
-  padding: 2px;
+  border-radius: 6px;
+  padding: 4px 5px;
+  background: #141414;
 }
 
 /* END PROJECT */
