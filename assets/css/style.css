@@ -167,6 +167,8 @@
 
 .contact-itens a {
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* END CONTACT */
