@@ -81,7 +81,7 @@ body {
 
 .icon-social {
   display: flex;
-  gap: 0.2;
+  gap: 0 0.2;
   margin-right: 2rem;
 }
 
@@ -111,7 +111,7 @@ body {
 
 /* END 1000PX */
 
-/* START RESPONSIVE HOME 700PX */
+/* START RESPONSIVE HEADER 700PX */
 
 @media screen and (max-width: 700px) {
   .header-container {
@@ -120,9 +120,29 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+  .menu {
+    gap: 0 0.5rem;
+  }
+
+  .icon-social {
+    margin-right: 0;
+  }
 }
 
 /* END RESPONSIVE 700PX */
+
+/* START RESPONSIVE 550PX */
+
+@media screen and (max-width: 550px) {
+
+  .header-container {
+    height: auto;
+  }
+  
+}
+
+/* END RESPONSIVE 550PX */
 
 
 /* END HEADER */
@@ -183,6 +203,24 @@ body {
 
 /* END RESPONSIVE HOME */
 
+/* START RESPONSIVE HOME 550PX */
+
+@media screen and (max-width: 550px) {
+
+  #home h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  #home h2 {
+  font-size: 1.5rem;
+  padding: 0 6rem;
+  }
+  
+}
+
+/* END RESPONSIVE 550PX */
+
 /* START RESPONSIVE SKILLS */
 
 #skills {
@@ -238,7 +276,29 @@ body {
 
 /* END RESSPONSIVE SKILLS */
 
-/* START RESPONSIVE PROJETOS */
+/* START SKILLS RESPONSIVE 550PX */
+
+@media screen and (max-width: 550px) {
+
+  #tecnology {
+    gap: 0.5rem;
+  }
+
+  #tecnology p {
+    width: 8rem;
+    height: 8rem;
+    font-size: 2rem;
+  }
+
+  .javascript{
+    font-size: 4rem !important;
+  }
+  
+}
+
+/* END SKILLS RESPONSIVE 550PX */
+
+/* START  PROJETOS */
 
 #projetos {
   width: 100%;
@@ -260,6 +320,8 @@ body {
   max-width: 50%;
 }
 
+/* START PROJETOS RESPONSIVE 1000PX */
+
 @media screen and (max-width: 1000px) {
   #projetos h2 {
     font-size: 2.5rem;
@@ -267,6 +329,18 @@ body {
 }
 
 /* END RESPONSIVE PROJETOS */
+
+/* START PROJETOS RESPONSIVE 550PX */
+
+@media screen and (max-width: 550px) {
+
+  #projetos h2 {
+    font-size: 2rem;
+  }
+  
+}
+
+/* END PROJETOS RESPONSIVE 550PX */
 
 /* START RESPONSIVE CONTATO 1000PX */
 
@@ -296,6 +370,8 @@ body {
   color: var(--color-text-secundary);
 }
 
+/* START CONTATOS RESPONSIVE 1000PX */
+
 @media screen and (max-width: 1000px) {
   .contato-whatsapp h2 {
     font-size: 3rem;
@@ -305,5 +381,23 @@ body {
     width: 20%;
   }
 }
+
+/* START CONTATOS RESPONSIVE 550PX */
+
+@media screen and (max-width: 550px) {
+  .contato-whatsapp {
+    padding: 0.5rem 1.5rem;
+  }
+  .contato-whatsapp h2 {
+    font-size: 3rem;
+  }
+
+  .contato-whatsapp img {
+    width: 20%;
+  }
+  
+}
+
+/* END CONTATOS RESPONSIVE */
 
 /* END MAIN */
