@@ -85,6 +85,42 @@ body {
   margin-right: 2rem;
 }
 
+/* START HEADER RESPONSIVE 1000PX */
+
+@media screen and (max-width:1000px) {
+  .logo {
+    margin-left: 0.5rem;
+  }
+
+  .logo a {
+    font-size: 2rem;
+  }
+
+  .menu {
+    gap: 0.5rem;
+  }
+
+  .item-menu a {
+    font-size: 1rem;
+  }
+
+  .icon-social {
+    margin-left: 1rem;
+  }
+}
+
+/* END 1000PX */
+
+@media screen and (max-width: 700px) {
+  .header-container {
+    height: 7rem;
+    gap: 0 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
 /* END HEADER */
 
 /* START MAIN */
@@ -123,6 +159,28 @@ body {
   border-radius: 0 0 1.25rem 1.25rem;
 }
 
+/* START RESPONSIVE 1000PX HOME */
+
+@media screen and (max-width:1000px) {
+  #home { 
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+  
+  #home h1 {
+    font-size: 5rem;
+  }
+
+  #home h2 {
+    font-size: 3rem;
+  }
+}
+
+/* END RESPONSIVE HOME */
+
+/* START RESPONSIVE SKILLS */
+
 #skills {
   width: 100%;
   height: 100vh;
@@ -156,6 +214,28 @@ body {
   font-size: 9rem !important;
 }
 
+/* START RESPONSIVE SKILLS 1000PX */
+
+@media screen and (max-width: 1000px) {
+  #tecnology {
+    gap: 1rem;
+  }
+
+  #tecnology p {
+    width: 10rem;
+    height: 10rem;
+    font-size: 3rem;
+  }
+
+  .javascript{
+    font-size: 6rem !important;
+  }
+}
+
+/* END RESSPONSIVE SKILLS */
+
+/* START RESPONSIVE PROJETOS */
+
 #projetos {
   width: 100%;
   padding-top: 6rem;
@@ -175,6 +255,16 @@ body {
 .img-projetos {
   max-width: 50%;
 }
+
+@media screen and (max-width: 1000px) {
+  #projetos h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* END RESPONSIVE PROJETOS */
+
+/* START RESPONSIVE CONTATO 1000PX */
 
 #contato {
   width: 100%;
@@ -200,6 +290,16 @@ body {
 .contato-whatsapp h2 {
   font-size: 5rem;
   color: var(--color-text-secundary);
+}
+
+@media screen and (max-width: 1000px) {
+  .contato-whatsapp h2 {
+    font-size: 3rem;
+  }
+
+  .contato-whatsapp img {
+    width: 20%;
+  }
 }
 
 /* END MAIN */
