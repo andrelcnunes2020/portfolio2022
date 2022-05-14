@@ -8,11 +8,11 @@
 }
 
 :root {
-  --color-bg-primary: #1A1818;
-  --color-bg-secundary: #C4C4C4;
+  --color-bg-primary: #1a1818;
+  --color-bg-secundary: #c4c4c4;
   --color-bg-header: rgba(196, 196, 196, 4%);
-  --color-text: #C4C4C4;
-  --color-text-secundary: #1A1818;
+  --color-text: #c4c4c4;
+  --color-text-secundary: #1a1818;
 }
 
 body {
@@ -42,7 +42,7 @@ body {
   margin-left: 2rem;
 }
 
-.logo a{
+.logo a {
   text-decoration: none;
   color: var(--color-text);
   font-size: 3rem;
@@ -52,7 +52,7 @@ body {
   font-style: italic;
 }
 
-.menu{
+.menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -64,19 +64,26 @@ body {
 }
 
 .item-menu a {
-  display: block;
   text-decoration: none;
   font-size: 1.2rem;
   color: var(--color-text);
   padding: 0.5rem;
+  position: relative;
+}
 
+.item-menu a::after {
+  content: ' ';
+  width: 0%;
+  height: 0.1rem;
+  background-color: var(--color-text);
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
   transition: 0.3s;
 }
 
-.item-menu a:hover {
-  background-color: var(--color-bg-secundary);
-  color: var(--color-text-secundary);
-  border-radius: 8px;
+.item-menu a:hover::after {
+  width: 100%;
 }
 
 .icon-social {
@@ -87,7 +94,7 @@ body {
 
 /* START HEADER RESPONSIVE 1000PX */
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   .logo {
     margin-left: 0.5rem;
   }
@@ -135,15 +142,12 @@ body {
 /* START RESPONSIVE 550PX */
 
 @media screen and (max-width: 550px) {
-
   .header-container {
     height: auto;
   }
-  
 }
 
 /* END RESPONSIVE 550PX */
-
 
 /* END HEADER */
 
@@ -185,13 +189,13 @@ body {
 
 /* START RESPONSIVE 1000PX HOME */
 
-@media screen and (max-width:1000px) {
-  #home { 
+@media screen and (max-width: 1000px) {
+  #home {
     align-items: center;
     justify-content: center;
     padding-top: 0;
   }
-  
+
   #home h1 {
     font-size: 5rem;
   }
@@ -206,17 +210,15 @@ body {
 /* START RESPONSIVE HOME 550PX */
 
 @media screen and (max-width: 550px) {
-
   #home h1 {
     font-size: 3rem;
     line-height: 3rem;
   }
 
   #home h2 {
-  font-size: 1.5rem;
-  padding: 0 6rem;
+    font-size: 1.5rem;
+    padding: 0 6rem;
   }
-  
 }
 
 /* END RESPONSIVE 550PX */
@@ -243,7 +245,6 @@ body {
   justify-content: center;
   align-items: center;
 
-
   width: 18rem;
   height: 18rem;
   background-color: var(--color-bg-secundary);
@@ -269,7 +270,7 @@ body {
     font-size: 3rem;
   }
 
-  .javascript{
+  .javascript {
     font-size: 6rem !important;
   }
 }
@@ -279,7 +280,6 @@ body {
 /* START SKILLS RESPONSIVE 550PX */
 
 @media screen and (max-width: 550px) {
-
   #tecnology {
     gap: 0.5rem;
   }
@@ -290,10 +290,9 @@ body {
     font-size: 2rem;
   }
 
-  .javascript{
+  .javascript {
     font-size: 4rem !important;
   }
-  
 }
 
 /* END SKILLS RESPONSIVE 550PX */
@@ -333,11 +332,9 @@ body {
 /* START PROJETOS RESPONSIVE 550PX */
 
 @media screen and (max-width: 550px) {
-
   #projetos h2 {
     font-size: 2rem;
   }
-  
 }
 
 /* END PROJETOS RESPONSIVE 550PX */
@@ -395,7 +392,6 @@ body {
   .contato-whatsapp img {
     width: 20%;
   }
-  
 }
 
 /* END CONTATOS RESPONSIVE */
