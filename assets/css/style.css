@@ -404,11 +404,17 @@ body {
 /* END CONTATOS RESPONSIVE */
 
 /* END MAIN */
+
+footer {
+  text-align: center;
+  color: var(--color-text);
+}
 /* SCROLL REVEL */
 
 #home,
 #skills,
 #projetos,
-#contato {
+#contato,
+#tecnology {
   visibility: hidden;
 }
